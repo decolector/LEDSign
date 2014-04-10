@@ -626,7 +626,7 @@ class Message:
 #There's gotta be a better way than this...
 class Markup:
   Registry = {
-    'pause' : Animate.Pause.Seconds,
+    'pause' : Animate.Pause.Seconds(0), #force no pause, shame on me
     'nl' : Format.NewLine,
     'newframe' : Format.NewFrame,
     'halfspace' : Format.Halfspace,
