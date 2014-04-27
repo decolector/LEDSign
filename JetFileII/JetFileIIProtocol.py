@@ -194,6 +194,8 @@ class Format:
       Center = '\x1e0'
       Left = '\x1e1'
       Right = '\x1e2'
+  class ExtendedAscii:
+    Insert = '\x17'
   @staticmethod
   def InterpretMarkup(text):
     #replace entries in curly brackets by their proper protocol values
@@ -643,6 +645,7 @@ class Markup:
     'right' : Format.Align. Horizontal.Right,
     'typeseton' : Format.AutoTypeset.On,
     'typesetoff' : Format.AutoTypeset.Off,
+    'extascii': Format.ExtendedAscii.Insert,
     'slowest' : Animate.Speed.Slow,
     'veryslow' : Animate.Speed.VerySlow,
     'slow' : Animate.Speed.Slow,

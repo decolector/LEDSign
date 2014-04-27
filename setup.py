@@ -15,5 +15,3 @@ setup(
         "pyserial >= 2.7",
     ],
 )
-
-
